@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Михаил Шепляков](https://up.htmlacademy.ru/htmlcss/34/user/1765491).
-* Наставник: [Малик Киров]](https://htmlacademy.ru/profile/id17217)
+* Наставник: [Малик](https://htmlacademy.ru/profile/id17217)
 
 ---
 
