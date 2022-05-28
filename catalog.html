@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
         <nav class="navigation">
-          <a class="logo"><img src="#" alt="логотип"></a>
+          <a class="logo"><img src="images/logo.svg" width="139px" height="70px" alt="логотип-ссылка на главную"></a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">главная</a>
@@ -45,24 +45,33 @@
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                   <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Инфраструктура:</legend>
-                      <input type="checkbox" name="pool" id="pool" checked>
-                      <label for="pool">Бассейн</label>
-                      <input type="checkbox" name="parking" id="parking" checked>
-                      <label for="parking">парковка</label>
-                      <input type="checkbox" name="web" id="wifi">
-                      <label for="wifi">Wi-Fi</label>
+                      <div>
+                        <input type="checkbox" name="pool" id="pool" checked>
+                        <label for="pool">Бассейн</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="parking" id="parking" checked>
+                        <label for="parking">парковка</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="web" id="wifi">
+                        <label for="wifi">Wi-Fi</label>
+                      </div>
                   </fieldset>
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Тип жилья:</legend>
-                    <label>
-                        <input type="radio" name="housing" value="Гостиница" checked> Гостиница
-                    </label>
-                    <label>
-                        <input type="radio" name="housing" value="Мотель"> Мотель
-                    </label>
-                    <label>
-                        <input type="radio" name="housing" value="Апартаменты"> Апартаменты
-                    </label>
+                    <div>
+                      <input type="radio" name="housing" value="Гостиница" id="hotel" checked >
+                      <label for="hotel">Гостиница</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="housing" value="Мотель" id="motel">
+                      <label for="motel">Мотель</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="housing" value="Апартаменты" id="apartments">
+                      <label for="apartments">Апартаменты</label>
+                    </div>
                     <input type="range" min="0" max="100" step="1" value="50">
                 </fieldset>
                 <input type="submit" name="apply" id="confirm" value="применить">
@@ -81,7 +90,7 @@
               <a><img src="#" alt="кнопка сетки показа"></a>
               <ul>
                   <li>
-                      <img src="#" alt="Фотография гостиницы">
+                      <img src="images/hotel-1.jpg" width="300px" height="211px" alt="Фотография гостиницы Amara Resort & Spa">
                       <h2>Amara Resort & Spa</h2>
                       <p>гостиница</p>
                       <p>От 4000 ₽</p>
@@ -91,7 +100,7 @@
                       <p>рейтинг: 8,5</p>
                   </li>
                   <li>
-                    <img src="#" alt="Фотография гостиницы">
+                    <img src="images/hotel-2.jpg" width="300px" height="211px" alt="Фотография гостиницы Villas at Poco Diablo">
                     <h2>Villas at Poco Diablo</h2>
                     <p>гостиница</p>
                     <p>От 5000 ₽</p>
@@ -101,7 +110,7 @@
                     <p>рейтинг: 9,2</p>
                 </li>
                 <li>
-                    <img src="#" alt="Фотография гостиницы">
+                    <img src="images/hotel-3.jpg" width="300px" height="211px" alt="Фотография гостиницы Desert Quail Inn">
                     <h2>Desert Quail Inn</h2>
                     <p>гостиница</p>
                     <p>От 2500 ₽</p>
@@ -111,7 +120,7 @@
                     <p>рейтинг: 6,9</p>
                 </li>
                 <li>
-                    <img src="#" alt="Фотография гостиницы">
+                    <img src="images/hotel-4.jpg" width="300px" height="211px" alt="Фотография гостиницы GreenTree Inn">
                     <h2>GreenTree Inn</h2>
                     <p>гостиница</p>
                     <p>От 1500 ₽</p>
@@ -166,6 +175,6 @@
           <li><a class="social" href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="мы на youtube"></a></li>
         </ul>
         <a class="contacts-phone" href="tel:+781281212">+7 (812) 812-12-12</a>
-        <a class="html-logo"><img src="#" alt="Логотип html академии"</a>
+        <a class="html-logo" href="https://htmlacademy.ru/"><img src="#" alt="Логотип html академии"></a>
       </footer>
   </body>
