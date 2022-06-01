@@ -101,3 +101,86 @@ body {
       color: black;
       text-decoration: none;
     }
+    .subscribe-catalog b {
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .subscribe-catalog p {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    .filter {
+      background-image: url(../images/filterbackground.jpg);
+      background-repeat: no-repeat;
+      color:white;
+    }
+    .catalog-filter-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+    .results b {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: black;
+    }
+    .hotel-item h3 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      color: black;
+    }
+    .hotel-item p {text-transform: capitalize;}
+    .moar {
+      background-color:#756157;
+      border-radius: 4px;
+    }
+    .moar a {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .addfavorite {
+      background-color:#82B3D3;;
+      border-radius: 4px;
+    }
+    .addfavorite a {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .infavorite {
+      background-color: #7DB54F;
+    }
+    .infavorite a {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .rates p {
+      background-color: #F2F2F2;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .pagelist a {font-size: 20px;
+      line-height: 36px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;}
+    .pagelist li {
+      background-color: #82B3D3;
+    }
