@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-400.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-700.woff2);
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+body {
+    font-family: "PT Sans";
+    background-color: white;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+  }
+   .navigation-link {color:black;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      text-decoration: none;
+      text-transform: capitalize;}
+    .navigation-item-big {background-color:#756157;
+      border: 1px solid;
+      border-radius: 4px;}  
+    .navigation-link-big {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white; }
+    .intro {background-image: url(../images/index-background.jpg);
+      background-repeat: no-repeat;}
+    .darkblue-advantage {background-color:#82B3D3;}
+    .lightblue-advantage {background-color:rgba(131, 179, 211, 0.12);}
+    .white-advantage {background-color: white;}
+    .blue-advantage {background-color: rgba(131, 179, 211, 0.2);}
+    .subscribe {color:white;
+      background-color: #82B3D3;
+      background-image: url(../images/background.jpg);
+      background-repeat: no-repeat;}
+    .subscribe b {
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .subscribe p {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    
+    .intro .big-text {font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color:black;
+    text-transform: uppercase;}
+    .intro p {font-size: 22px;
+      font-weight: 400;
+      line-height: 26px;}
+    .advantages h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      text-transform: uppercase;
+      color:black;}
+    .darkblue-advantage h3 {
+      color: white;}
+    .darkblue-advantage p {
+      color: white;}
+    .sic b {font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: black;
+    }
+    .sic p {
+      font-size: 22px; 
+      line-height: 26px;
+    }
+    .siclink {
+      background-color: #756157;
+      border-radius: 4px;
+      color: white;
+      font-size: 20px;
+      line-height: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .contacts-phone {
+      font-size: 40px;
+      line-height: 40px;
+      color: black;
+      text-decoration: none;
+    }
+    .subscribe-catalog b {
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .subscribe-catalog p {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    .filter {
+      background-image: url(../images/filterbackground.jpg);
+      background-repeat: no-repeat;
+      color:white;
+    }
+    .catalog-filter-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+    .results b {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: black;
+    }
+    .hotel-item h3 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      color: black;
+    }
+    .hotel-item p {text-transform: capitalize;}
+    .moar {
+      background-color:#756157;
+      border-radius: 4px;
+    }
+    .moar a {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .addfavorite {
+      background-color:#82B3D3;;
+      border-radius: 4px;
+    }
+    .addfavorite a {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .infavorite {
+      background-color: #7DB54F;
+    }
+    .infavorite a {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .rates {background-color: #F2F2F2;
+      border-radius: 4px;}
+    .rates p {
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .pagelist a {font-size: 20px;
+      line-height: 36px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;}
+    .pagelist li {
+      background-color: #82B3D3;
+    }
