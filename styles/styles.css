@@ -47,7 +47,9 @@ body {
       text-decoration: none;
       text-transform: uppercase;
       color: white; }
-    .intro {background-image: url(../images/index-background.jpg);
+    .intro {
+      padding-top: 51px;
+      background-image: url(../images/index-background.jpg);
       background-repeat: no-repeat;}
     .darkblue-advantage {background-color:#82B3D3;}
     .lightblue-advantage {background-color:rgba(131, 179, 211, 0.12);}
@@ -210,7 +212,7 @@ body {
     .logo {
       margin-left: 70px;
     }
-.main-logo {
+.main-logo img{
   display: block;
-  margin: 51 auto;
+  margin: 0px auto;
 }
