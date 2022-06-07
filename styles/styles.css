@@ -47,7 +47,7 @@ body {
       text-decoration: none;
       text-transform: uppercase;
       color: white; }
-    .intro {
+    .intro-big {
       padding-top: 51px;
       background-image: url(../images/index-background.jpg);
       background-repeat: no-repeat;}
@@ -216,3 +216,12 @@ body {
   display: block;
   margin: 0px auto;
 }
+.big-text {
+  width: 620px;
+  text-align: center;
+  margin: 63px auto auto;
+}
+.small-text {
+    width: 660px;
+    margin: 31px auto auto;
+  }
