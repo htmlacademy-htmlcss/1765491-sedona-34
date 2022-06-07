@@ -12,15 +12,25 @@
   font-style: bold;
   font-display: swap;
 }
+html {
+  width: 100%;
+}
 body {
+    width: 1200px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: "PT Sans";
     background-color: white;
     font-weight: 400;
     font-size: 18px;
     color: #333333;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
+    .navigation {
+      display: flex;
+    }
    .navigation-link {color:black;
       font-weight: 700;
       font-size: 20px;
@@ -184,3 +194,23 @@ body {
     .pagelist li {
       background-color: #82B3D3;
     }
+    .main-wrapper {
+      flex-grow: 1;
+    }
+    .hidden-text {
+      display: none;
+    }
+    .navigation-list {
+      display: flex;
+    }
+    .navigation-right {
+      display: flex;
+      margin-left: auto;
+    }
+    .logo {
+      margin-left: 70px;
+    }
+.main-logo {
+  display: block;
+  margin: 51 auto;
+}
