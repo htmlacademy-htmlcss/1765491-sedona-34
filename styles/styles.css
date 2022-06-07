@@ -51,10 +51,16 @@ body {
       padding-top: 51px;
       background-image: url(../images/index-background.jpg);
       background-repeat: no-repeat;}
-    .darkblue-advantage {background-color:#82B3D3;}
-    .lightblue-advantage {background-color:rgba(131, 179, 211, 0.12);}
+    .darkblue-advantage {
+      width: 400px;
+      background-color:#82B3D3;
+    }
+    .lightblue-advantage {background-color:rgba(131, 179, 211, 0.12);
+    width: 33.33%;}
     .white-advantage {background-color: white;}
-    .blue-advantage {background-color: rgba(131, 179, 211, 0.2);}
+    .blue-advantage {background-color: rgba(131, 179, 211, 0.2);
+      width: 33.33%;
+    }
     .subscribe {color:white;
       background-color: #82B3D3;
       background-image: url(../images/background.jpg);
@@ -84,9 +90,24 @@ body {
       line-height: 28px;
       text-transform: uppercase;
       color:black;}
+    .advantages-list {
+      padding: 0;
+      margin: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .advantages-first {
+      display: flex;
+      padding: 0;
+      margin: 0px;
+      list-style: none;
+    }
     .darkblue-advantage h3 {
+      margin: 0;
       color: white;}
     .darkblue-advantage p {
+      margin: 0;
       color: white;}
     .sic b {font-size: 30px;
       line-height: 36px;
@@ -225,3 +246,11 @@ body {
     width: 660px;
     margin: 31px auto auto;
   }
+.wrapflexone {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapflextwo {
+  display: flex;
+}
+
