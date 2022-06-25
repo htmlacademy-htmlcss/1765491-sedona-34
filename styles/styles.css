@@ -305,6 +305,7 @@ body {
 }
 
 .hotel-item h3 {
+  max-width: 290px;
   margin: 0;
   margin-top: 16px;
   font-size: 24px;
@@ -417,6 +418,8 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
 }
 
 .navigation-right {
