@@ -19,7 +19,8 @@ html {
 }
 
 body {
-  min-height: 100%;
+  width: 1200px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   font-family: "PT Sans";
@@ -29,6 +30,7 @@ body {
   color: #333333;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -43,10 +45,41 @@ body {
   text-decoration: none;
   text-transform: capitalize;
 }
+.current-link{
+  position: relative;
+}
+.current-link::before{
+  position: absolute;
+  left: 17px;
+  right: 17px;
+  height: 2px;
+  background-color: #756257;
+  bottom: 0;
+  content: "";
+}
+.test {margin: 0; padding: 0;display: inline; padding-bottom: 18px; position: relative;}
+.navigation-link:hover .test {border-bottom: 2px solid #756257;}
+.navigation-link-search {
+  padding: 33px 21px;
+  display: block;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
+.navigation-link-search:hover,.navigation-link-like:hover {background-color: #f3f3f3;
+box-shadow: inset 0px 0px 3px 1px #d3d3d3;}
+.navigation-link-like{
+  padding: 33px 21px;
+  display: block;
+  background-image: url(../images/like.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
 
+}
 .navigation-item-big {
   background-color: #756157;
-  border: 1px solid;
   border-radius: 4px;
   min-width: 160px;
   text-align: center;
@@ -56,6 +89,7 @@ body {
 }
 
 .navigation-link-big {
+  border-radius: 4px;
   display: block;
   padding: 9px 15px;
   font-size: 16px;
@@ -65,7 +99,18 @@ body {
   text-transform: uppercase;
   color: white;
 }
-
+.navigation-link-big:hover  {
+  background-color: #615048;
+}
+.navigation-link-big:focus {
+  background-color: #615048;
+  outline: none;
+}
+.navigation-link-big:active {
+  background-color: #756157;
+  color: #FFFFFF;
+  opacity: 30%;
+}
 .navigation-item a {
   display: block;
   padding: 20px 17px;
@@ -251,10 +296,27 @@ body {
 }
 
 .siclink a {
+  text-decoration: none;
+  color: white;
   display: block;
   padding: 12px 15px;
+  border-radius: 4px;
 }
 
+.siclink a:hover {
+  background-color: #615048;
+
+}
+.siclink a:focus {
+  background-color: #615048;
+  outline: none;
+}
+.siclink a:active{
+  background-color: #756157;
+  color: #FFFFFF;
+  opacity: 30%;
+
+}
 .contacts-phone {
   margin-top: 45px;
   margin-bottom: 35px;
@@ -263,6 +325,8 @@ body {
   line-height: 40px;
   color: black;
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe-catalog b {
@@ -482,6 +546,7 @@ body {
 }
 
 .footer-link {
+  padding-left: 0;
   list-style: none;
   display: flex;
   align-self: center;
@@ -589,8 +654,31 @@ body {
   margin-top: 78px;
   display: block;
   min-height: 76px;
+  min-width: 80px;
+  background-position: center;
 }
+.icon-house {
+  background-image: url(../images/iconhouse.svg);
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+}
+.icon-meal {
+  background-image: url(../images/iconmeal.svg);
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
 
+}
+.icon-gifts {
+  background-image: url(../images/icongifts.svg);
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+
+}
+.html-logo {
+  margin-top: 49px;
+  display: block;
+  margin-left: auto;
+}
 .html-logo img {
   display: block;
   align-self: center;
@@ -599,7 +687,6 @@ body {
 }
 
 .header-wrapper {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -607,7 +694,6 @@ body {
 }
 
 .footer-wrapper {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -615,7 +701,6 @@ body {
 }
 
 .main-wrapper {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -630,4 +715,22 @@ body {
   margin-right: auto;
   margin-top: -5px;
   background-color: white;
+}
+.social {
+  position: relative;
+  display: block;
+  width: 48px;
+  padding: 10px;
+}
+.svgfooter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill:#000;
+}
+.footer-link:hover .svgfooter{
+  fill: #fff;
 }
