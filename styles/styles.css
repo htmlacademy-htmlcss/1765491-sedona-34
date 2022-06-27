@@ -328,6 +328,13 @@ box-shadow: inset 0px 0px 3px 1px #d3d3d3;}
   margin-left: auto;
   margin-right: auto;
 }
+.contacts-phone:hover, .contacts-phone:focus {
+color:#756157;
+outline: none;
+}
+.contacts-phone:active {
+  color:rgba(117, 97, 87, 0.3);
+}
 
 .subscribe-catalog b {
   font-size: 30px;
@@ -546,7 +553,8 @@ box-shadow: inset 0px 0px 3px 1px #d3d3d3;}
 }
 
 .footer-link {
-  padding-left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   list-style: none;
   display: flex;
   align-self: center;
@@ -679,12 +687,12 @@ box-shadow: inset 0px 0px 3px 1px #d3d3d3;}
   display: block;
   margin-left: auto;
 }
-.html-logo img {
+/* .html-logo img {
   display: block;
   align-self: center;
   padding-top: 48px;
   margin-left: auto;
-}
+} */
 
 .header-wrapper {
   width: 1200px;
@@ -720,7 +728,8 @@ box-shadow: inset 0px 0px 3px 1px #d3d3d3;}
   position: relative;
   display: block;
   width: 48px;
-  padding: 10px;
+  min-height: 16px;
+  /* padding: 10px 5px; */
 }
 .svgfooter {
   position: absolute;
@@ -729,8 +738,34 @@ box-shadow: inset 0px 0px 3px 1px #d3d3d3;}
   bottom: 0;
   left: 0;
   margin: auto;
-  fill:#000;
+  fill:#83B3D3;
 }
-.footer-link:hover .svgfooter{
-  fill: #fff;
+.social:hover .svgfooter{
+  fill: #68A2CA
+  ;
+}
+.social:focus{
+  outline: none;
+
+}
+.social:focus .svgfooter{
+  fill:#68A2CA;
+}
+.social:active .svgfooter{
+  fill:rgba(104, 162, 202, 0.3);
+}
+.html-logosvg {
+  fill:black;
+}
+.html-logo:hover .html-logosvg{
+  fill:#756157;
+}
+.html-logo:focus{
+  outline: none;
+}
+.html-logo:focus .html-logosvg{
+  fill:#756157;
+}
+.html-logo:active .html-logosvg{
+  fill:rgba(117, 97, 87, 0.3);
 }
