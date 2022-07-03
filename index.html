@@ -149,6 +149,33 @@
         </svg></a>
     </footer>
   </div>
+
+<div class="modal-screen">
+<div class="modal-window">
+  <div class="modal-head"><h3>поиск гостиницы в седоне</h3>
+  <button class="modal-close" type="button"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg></button></div>
+  <form class="modal-form">
+    <label class="modal-form-label" for="indate">
+      Дата заезда:
+    </label><input class="modal-input" type="text" name="indate" id="indate" value="27 апреля 2020">
+    <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+    <label class="modal-form-label" for="outdate">
+      Дата выезда:
+    </label><input class="modal-input" type="text" name="outdate" id="outdate" value="1 сентября 2021">
+    <span class="modal-accept">На эти даты есть свободные номера. Пока есть.</span>
+    <div class="people-wrapper">
+    <label class="modal-number-form-label">
+      взрослые:<input class="modal-number-input old-number" type="number" value="2">
+    </label>
+    <label class="modal-number-form-label tooltip-wrapper">
+      дети:<span class="tooltip"></span><input class="modal-number-input child-number" type="number" value="1">
+    </label>
+  </div>
+    <button class="modal-search" type="button">найти</button>
+  </form>
+</div>
+</div>
+
 </body>
 
 </html>
