@@ -1417,10 +1417,12 @@ body {
 }
 
 .modal-number-form-label {
+  position: relative;
   display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .modal-number-form-label:first-of-type {
@@ -1464,7 +1466,7 @@ body {
   color: black;
 }
 
-.modal-form span {
+.modal-span {
   grid-column: 2/span 2;
   font-size: 16px;
   line-height: 21px;
@@ -1502,9 +1504,17 @@ body {
   border-radius: 4px;
   padding: 15px 0px 15px 61px;
   font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.modal-number-input::-webkit-outer-spin-button,
+.modal-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .modal-search {
+  box-sizing: border-box;
   width: 575px;
   margin-top: 40px;
   display: block;
@@ -1515,10 +1525,13 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   color: white;
   padding: 12px 26px;
+  text-decoration: none;
 }
 
+.modal-search:hover {background-color: #68A2CA;}
 .old-number {
   margin-left: 64px;
 }
@@ -1534,8 +1547,42 @@ body {
 .tooltip {
   padding: 0;
   position: absolute;
+  top: 15px;
+  left: 54px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  background-color: #83B3D3;
+  background-image: url(../images/iicon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tooltip:hover {
   background-color: #68A2CA;
+}
+
+.minus {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  right: 101px;
+  top: 18px;
+}
+
+.minus svg {position: relative;
+  fill: rgba(0, 0, 0, 0.3);
+  top:-12px;
+}
+
+.plus {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  right: 19px;
+  top:18px;
+}
+
+.plus svg {display: block;
+  fill: rgba(0, 0, 0, 0.3);
 }
