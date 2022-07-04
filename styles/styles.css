@@ -1344,28 +1344,9 @@ body {
   overflow: hidden;
 }
 
-.modal-screen {
-  z-index: 1;
-  left: 0;
-  top: 0;
-  position: fixed;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
-}
 
-.modal-window {
-  width: 715px;
-  box-sizing: border-box;
-  align-self: flex-start;
-  background-color: white;
-  padding: 54px 70px 70px 70px;
-  border-radius: 50px;
-  margin-top: 396px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+
 
 .modal-head {
   display: flex;
@@ -1531,7 +1512,21 @@ body {
   text-decoration: none;
 }
 
-.modal-search:hover {background-color: #68A2CA;}
+.modal-search:hover {
+  background-color: #68A2CA;
+}
+
+.modal-search:focus {
+  outline: 2px solid #756257;
+}
+
+.modal-search:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+
+
 .old-number {
   margin-left: 64px;
 }
@@ -1562,17 +1557,22 @@ body {
   background-color: #68A2CA;
 }
 
+.tooltip:hover+.tooltip-text {
+  display: block;
+}
+
 .minus {
   position: absolute;
   width: 13px;
   height: 13px;
   right: 101px;
-  top: 18px;
+  top: 20px;
 }
 
-.minus svg {position: relative;
+.minus svg {
+  position: relative;
   fill: rgba(0, 0, 0, 0.3);
-  top:-12px;
+  top: -12px;
 }
 
 .plus {
@@ -1580,9 +1580,93 @@ body {
   width: 13px;
   height: 13px;
   right: 19px;
-  top:18px;
+  top: 18px;
 }
 
-.plus svg {display: block;
+.plus svg {
+  display: block;
   fill: rgba(0, 0, 0, 0.3);
+}
+
+.minus:hover svg {
+  fill: black;
+}
+
+.minus:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 3px;
+}
+
+.minus:focus svg {
+  fill: black;
+}
+
+.minus:active svg {
+  fill: rgba(0, 0, 0, 0.3)
+}
+
+.minus:active {
+  outline: none;
+}
+
+.plus:hover svg {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.plus:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 3px;
+}
+
+.plus:focus svg {
+  fill: black;
+}
+
+.plus:active svg {
+  fill: rgba(0, 0, 0, 0.3)
+}
+
+.plus:active {
+  outline: none;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  width: 256px;
+  border-radius: 10px;
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 18px;
+  left: -155px;
+  top: 45px;
+  display: none;
+}
+
+.tooltip:hover .tooltip-text {
+  display: block;
+}
+
+.modal-window {
+  width: 715px;
+  box-sizing: border-box;
+  align-self: flex-start;
+  background-color: white;
+  padding: 54px 70px 70px 70px;
+  border-radius: 50px;
+  margin-top: 396px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-screen {
+  z-index: 1;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+   display: none; /*закомментировать эту строку, что бы увидеть модальное окно */
 }
