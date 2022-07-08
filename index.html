@@ -150,7 +150,7 @@
     </footer>
   </div>
 <!-- МОДАЛЬНОЕ ОКНО НИЖЕ -->
-  <div class="modal-screen modal-view">
+  <div class="modal-screen"><!-- ДОБАВИТЬ КЛАСС modal-view ЧТО БЫ УВИДЕТЬ МОДАЛЬНОЕ ОКНО -->
     <div class="modal-window">
       <div class="modal-head">
         <h3>поиск гостиницы в седоне</h3>
@@ -160,7 +160,7 @@
               d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
           </svg></button>
       </div>
-      <form class="modal-form">
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="modal-form-label" for="indate">
           Дата заезда:
         </label><input class="modal-input" type="text" name="indate" id="indate" value="27 апреля 2020">
@@ -170,27 +170,33 @@
         </label><input class="modal-input" type="text" name="outdate" id="outdate" value="1 сентября 2021">
         <span class="modal-span modal-accept">На эти даты есть свободные номера. Пока есть.</span>
         <div class="people-wrapper">
-          <label class="modal-number-form-label">
-            взрослые:<div class="minus" tabindex="0"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
+          <label class="label-name" for="adultcount">
+            взрослые:</label>
+            <div class="modal-number-form-label">
+              <button class="minus"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-              </svg></div>
-            <div class="plus" tabindex="0"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+              </svg></button>
+            <button class="plus"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-              </svg></div><input class="modal-number-input old-number" type="number" value="2">
-          </label>
-          <label class="modal-number-form-label tooltip-wrapper">
-            дети:<span class="tooltip"><span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
-            <div class="minus" tabindex="0"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
+              </svg></button><input class="modal-number-input old-number" type="number" value="2" id="adultcount" name="adultcount">
+            </div>
+          <label class="label-name tooltip-wrapper" for="childcount">
+            дети:
+            </label>
+            <div class="modal-number-form-label">
+              <span class="tooltip"><span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
+
+            <button class="minus"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-            </svg></div>
-            <div class="plus" tabindex="0"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+            </svg></button>
+            <button class="plus"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-            </svg></div><input class="modal-number-input child-number" type="number" value="1">
-          </label>
+            </svg></button><input class="modal-number-input child-number" type="number" value="1" id="childcount" name="childcount">
+          </div>
         </div>
         <button type="submit" class="modal-search">найти</button>
       </form>
