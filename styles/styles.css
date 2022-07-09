@@ -767,6 +767,7 @@ body {
   fill: 3F5E72;
   position: absolute;
 }
+.infrastucture[type="checkbox"]:focus-visible+.checkbox-field {outline: 3px solid #68A2CA;}
 
 .radio-wrapper:first-of-type {
   margin-top: 30px;
@@ -808,7 +809,9 @@ body {
   top: 25%;
   border-radius: 50%;
 }
-
+.type-radio[type="radio"]:focus-visible+.radio-field {
+  outline: 3px solid #68A2CA;
+}
 .price-wrapper {
   display: flex;
   margin-top: 34px;
@@ -1173,13 +1176,6 @@ body {
   display: block;
   margin-left: auto;
 }
-
-/* .html-logo img {
-  display: block;
-  align-self: center;
-  padding-top: 48px;
-  margin-left: auto;
-} */
 
 .header-wrapper {
   width: 1200px;
