@@ -11,7 +11,7 @@
   <div class="header-wrapper">
     <header class="page-header">
       <nav class="navigation">
-        <h2 class="hidden-text">навигация</h2>
+        <h2 class="visually-hidden">навигация</h2>
         <a href="index.html" class="logo"><img src="images/logo.svg" width="139" height="70"
             alt="логотип-ссылка на главную"></a>
         <ul class="navigation-list">
@@ -67,7 +67,7 @@
               </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
               <div class="radio-wrapper">
                 <label class="radio-point for="hotel"><input class="visually-hidden type-radio" type="radio" name="housing" value="Гостиница" id="hotel" checked><span class="radio-field"></span>Гостиница</label>
               </div>
@@ -78,13 +78,13 @@
                 <label class="radio-point" for="apartments"><input class="visually-hidden type-radio" type="radio" name="housing" value="Апартаменты" id="apartments"><span class="radio-field"></span>Апартаменты</label>
               </div>
             </fieldset>
-            <div>
-              <p class="catalog-filter-title">Стоимость, ₽</p>
+            <div class="price-range">
+              <p class="catalog-filter-title">Стоимость, ₽:</p>
               <div class="price-wrapper">
               <input class="minimal-price" type="number" value="0">
               <input class="maximum-price" type="number" value="9000">
               </div>
-              <div class="price-line"><div class="price-active-line" style="left:0px; right:60px">
+              <div class="price-line"><div class="price-active-line" style="left:0px; right:51px">
               <button type="button" class="change-min-price"><span class="visually-hidden">изменить минимальную цену.</span></button>
               <button type="button" class="change-max-price"><span class="visually-hidden">изменить максимальную цену.</span></button>
             </div></div>
@@ -97,9 +97,9 @@
         </div>
       </section>
       <section class="results">
-        <h2 class="hidden-text">Подходящие гостиницы</h2>
+        <h2 class="visually-hidden">Подходящие гостиницы</h2>
         <div class="result-header">
-          <b>найдено гостиниц:38</b>
+          <b>найдено гостиниц: 38</b>
           <select class="sort" name="sort">
             <option value="from_low">Сначала дешевые</option>
             <option value="from_hight">Сначала дорогие</option>
@@ -197,7 +197,7 @@
           <li class="pagelist-item">
             <a href="#" alt="страница 10">10</a>
           </li>
-          <p class="count">Гостиниц на странице</p>
+          <p class="count">Гостиниц на странице:</p>
           <select class="num-onpage" name="count">
             <option value="from_low">4</option>
             <option value="from_hight">8</option>
@@ -208,7 +208,7 @@
     </main>
 
     <section class="subscribe-catalog">
-      <h2 class="hidden-text">форма подписки</h2>
+      <h2 class="visually-hidden">форма подписки</h2>
       <b>подпишитесь на рассылку</b>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -218,7 +218,7 @@
     </section>
     <div class="footer-wrapper">
       <footer class="footer">
-        <h2 class="hidden-text">Контакты и копирайты</h2>
+        <h2 class="visually-hidden">Контакты и копирайты</h2>
         <ul class="footer-link">
           <li><a class="social" href="https://vk.com/htmlacademy"><svg class="svgfooter" aria-hidden="true"
                 focusable="false" width="24" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
