@@ -90,6 +90,7 @@ body {
 }
 
 .navigation-link-like {
+  position: relative;
   padding: 28px 21px;
   display: block;
   background-image: url(../images/like.svg);
@@ -144,7 +145,18 @@ body {
 .navigation-item-right {
   align-self: center;
 }
-
+.liked-number {position: absolute;
+  color: white;
+  font-size: 10px;
+  line-height: 17px;
+  text-align: center;
+  vertical-align: bottom;
+border-radius: 50%;
+background-color: #7DB54F;
+width: 20px;
+height: 20px;
+top: 20px;
+right: -160px;}
 .intro-big {
   position: relative;
   padding-top: 51px;
