@@ -584,7 +584,11 @@ body {
   margin-right: 71px;
 }
 
-
+.current-page {
+  color:black;
+  background-color: #F2F2F2;
+}
+.current-page a {color:black;}
 .hidden-text {
   display: none;
 }
