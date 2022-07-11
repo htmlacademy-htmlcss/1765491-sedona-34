@@ -496,6 +496,7 @@ body {
 .moar a:focus {
   background-color: #615048;
 }
+
 .moar:disabled {
   background-color: #E5E5E5;
 }
@@ -1603,7 +1604,6 @@ body {
   align-self: end;
   justify-self: start;
   width: 420px;
-  height: ;
   box-sizing: border-box;
   padding: 15px 19px;
   border-radius: 4px;
@@ -1882,18 +1882,23 @@ body {
 .navigation-link:focus-visible {
   outline: 3px solid #83B3D3;
 }
-.calendar {position: absolute;
-width: 16px;
-height: 15px;
-background-image: url(../images/calendar.svg);
-opacity: 0.25;
-left: 612px;
-top:180px;}
-.calendar2 {position: absolute;
+
+.calendar {
+  position: absolute;
   width: 16px;
   height: 15px;
   background-image: url(../images/calendar.svg);
   opacity: 0.25;
   left: 612px;
-  top:270px;
- }
+  top: 180px;
+}
+
+.calendar2 {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/calendar.svg);
+  opacity: 0.25;
+  left: 612px;
+  top: 270px;
+}
