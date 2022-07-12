@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="./images/favicon.png"><!-- 32×32 -->
 </head>
 
 <body>
@@ -14,27 +15,28 @@
       <nav class="navigation">
         <h2 class="hidden-text">навигация</h2>
         <a href="index.html" class="logo"><img src="images/logo.svg" width="139" height="70"
-            alt="логотип-ссылка на главную"></a>
+            alt="логотип-ссылка на главную."></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link current-link" href="index.html" alt="главная">главная</a>
+            <a class="navigation-link current-link" href="index.html" aria-label="Главная страница">главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#" alt="о седоне"><span class="test">о седоне</span></a>
+            <a class="navigation-link" href="#" aria-label="о седоне"><span class="test">о седоне</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html" alt="каталог"><span class="test">гостиницы</span></a>
+            <a class="navigation-link" href="catalog.html" aria-label="каталог"><span class="test">гостиницы</span></a>
           </li>
         </ul>
         <ul class="navigation-right">
           <li class="navigation-item-right">
-            <a class="navigation-link navigation-link-search" href="#" alt="поиск"></a>
+            <a class="navigation-link navigation-link-search" href="#" aria-label="поиск"></a>
           </li>
           <li class="navigation-item-right">
-            <a class="navigation-link navigation-link-like" href="#" alt="избранное"></a>
+            <a class="navigation-link navigation-link-like" href="#" aria-label="избранное"></a>
+            <span class="liked-number">12</span>
           </li>
           <li class="navigation-item-big">
-            <a class="navigation-link-big" href="#">хочу сюда!</a>
+            <a class="navigation-link-big" href="#" aria-label="хочу сюда">хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -43,12 +45,12 @@
   <div class="main-wrapper">
     <main>
       <section class="intro">
-        <div class="intro-big"><a href="#" class="main-logo"><img src="images/main-logo.svg" width="458" height="352"
-              alt="welcome to the gorgeous Sedona..."></a></div>
+        <div class="intro-big"><img class="main-logo" src="images/main-logo.svg" width="458" height="352"
+              alt="welcome to the gorgeous Sedona..."></div>
         <h2 class="hidden-text">седона</h2>
         <p class="big-text">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
-        <p class="small-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="small-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон! </p>
       </section>
       <section class="advantages">
         <h2 class="hidden-text">преимущества</h2>
@@ -56,49 +58,49 @@
           <li class="wrapflexone">
             <div class="darkblue-advantage">
               <h3>Настоящий городок</h3>
-              <p>№1</p>
+              <p>— №1 —</p>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="images/photo-1.jpg" width="800" height="384" alt="Фотография города">
+            <img src="images/photo-1.jpg" width="800" height="384" alt="Фотография города.">
             <ul class="advantages-first">
               <li class="lightblue-advantage">
                 <div class="icon icon-house"></div>
                 <h3>жильё</h3>
-                <p>Рекомендуем пожить в&nbspнастоящем мотеле, всё&nbspкак&nbspв&nbspкино!</p>
+                <p>Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!</p>
               </li>
               <li class="white-advantage">
                 <div class="icon icon-meal"></div>
                 <h3>еда</h3>
-                <p>Всегда заказывайте топовый&nbspфирменный&nbspбургер, вы не разочаруетесь!</p>
+                <p>Всегда заказывайте топовый&nbsp;фирменный&nbsp;бургер, вы не разочаруетесь!</p>
               </li>
               <li class="lightblue-advantage">
                 <div class="icon icon-gifts"></div>
                 <h3>сувениры</h3>
-                <p>Не только китайского, но&nbspи&nbspнастоящего&nbspместного производства!</p>
+                <p>Не только китайского, но&nbsp;и&nbsp;настоящего&nbsp;местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="wrapflextwo">
-            <img src="images/photo-2.jpg" width="800" height="384" alt="Фотография моста дьявола">
+            <img src="images/photo-2.jpg" width="800" height="384" alt="Фотография моста дьявола.">
             <div class="darkblue-advantage">
-              <h3>там есть мост&nbspдьявола</h3>
-              <p>№2</p>
+              <h3>там есть мост&nbsp;дьявола</h3>
+              <p>— №2 —</p>
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
           <li class="lightblue-advantage">
             <h3>Небольшая площадь</h3>
-            <p>№3</p>
+            <p>— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="blue-advantage">
             <h3>Красивая дорога</h3>
-            <p>№4</p>
+            <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="lightblue-advantage">
             <h3>Мало туристов</h3>
-            <p>№5</p>
+            <p>— №5 —</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
@@ -106,8 +108,8 @@
       <section class="sic">
         <h2 class="hidden-text">Поиск гостиницы</h2>
         <b>заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам лучшие предложения гостиниц в Седоне</p>
-        <div class="siclink"><a href="#" alt="Выполнить поиск">поиск гостиницы в седоне</a></div>
+        <p>Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения&nbsp;гостиниц в Седоне</p>
+        <div class="siclink"><a href="#" aria-label="подобрать гостиницу">поиск гостиницы в седоне</a></div>
       </section>
       <section class="subscribe">
         <h2 class="hidden-text">форма подписки</h2>
@@ -149,50 +151,59 @@
         </svg></a>
     </footer>
   </div>
-
+<!-- МОДАЛЬНОЕ ОКНО НИЖЕ -->
+<!-- ДОБАВИТЬ КЛАСС "modal-view" В div С КЛАССОМ modal-screen ЧТО БЫ УВИДЕТЬ МОДАЛЬНОЕ ОКНО -->
   <div class="modal-screen">
-    <div class="modal-window">
+    <div class="modal-window ">
       <div class="modal-head">
         <h3>поиск гостиницы в седоне</h3>
-        <button class="modal-close" type="button"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+        <button class="modal-close" type="button" aria-label="закрыть окно"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
           </svg></button>
       </div>
-      <form class="modal-form">
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+        <button type="button" class="calendar"></button>
+        <button type="button" class="calendar2"></button>
         <label class="modal-form-label" for="indate">
-          Дата заезда:
+          Дата Заезда:
         </label><input class="modal-input" type="text" name="indate" id="indate" value="27 апреля 2020">
         <span class="modal-span modal-error">Мы не можем отправить вас в прошлое.</span>
         <label class="modal-form-label" for="outdate">
-          Дата выезда:
+          Дата Выезда:
         </label><input class="modal-input" type="text" name="outdate" id="outdate" value="1 сентября 2021">
         <span class="modal-span modal-accept">На эти даты есть свободные номера. Пока есть.</span>
         <div class="people-wrapper">
-          <label class="modal-number-form-label">
-            взрослые:<div class="minus" tabindex="0"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
+          <label class="label-name" for="adultcount">
+            взрослые:</label>
+            <div class="modal-number-form-label">
+              <button class="minus"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-              </svg></div>
-            <div class="plus" tabindex="0"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+              </svg></button>
+            <button class="plus"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-              </svg></div><input class="modal-number-input old-number" type="number" value="2">
-          </label>
-          <label class="modal-number-form-label tooltip-wrapper">
-            дети:<span class="tooltip"><span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
-            <div class="minus" tabindex="0"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
+              </svg></button><input class="modal-number-input old-number" type="number" value="2" id="adultcount" name="adultcount">
+            </div>
+          <label class="label-name tooltip-wrapper" for="childcount">
+            дети:
+            </label>
+            <div class="modal-number-form-label">
+              <span class="tooltip"><span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
+
+            <button class="minus"><svg width="13" height="1" viewBox="0 0 13 1" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-            </svg></div>
-            <div class="plus" tabindex="0"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+            </svg></button>
+            <button class="plus"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-            </svg></div><input class="modal-number-input child-number" type="number" value="1">
-          </label>
+            </svg></button><input class="modal-number-input child-number" type="number" value="1" id="childcount" name="childcount">
+          </div>
         </div>
-        <a class="modal-search" tabindex="0">найти</a>
+        <button type="submit" class="modal-search" aria-label="выполнить поиск">найти</button>
       </form>
     </div>
   </div>
