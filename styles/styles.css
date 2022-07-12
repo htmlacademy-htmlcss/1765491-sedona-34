@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   src: url(../fonts/ptsans-700.woff2);
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -23,7 +23,7 @@ body {
   min-height: auto;
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   background-color: #F2F2F2;
   font-weight: 400;
   font-size: 18px;
@@ -173,6 +173,7 @@ body {
   padding-bottom: 82px;
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
+  background-color: #756157;
 }
 
 .intro-big::after {
@@ -435,6 +436,7 @@ body {
   color: white;
   padding-top: 35px;
   padding-bottom: 70px;
+  background-color: #756157;
 }
 
 .catalog-filter-title {
@@ -631,6 +633,8 @@ body {
   color: black;
   background-color: #F2F2F2;
 }
+.current-page:hover a{color: black;
+  background-color: #F2F2F2;}
 
 .current-page a {
   color: black;
@@ -845,7 +849,7 @@ body {
   background-image: url(../images/checkbox.svg);
   background-repeat: no-repeat;
   background-position: center;
-  fill: 3F5E72;
+  fill: #3F5E72;
   position: absolute;
 }
 
@@ -1136,6 +1140,7 @@ body {
   font-size: 18px;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .sort:hover {
@@ -1170,6 +1175,7 @@ body {
   background-position: right 20px center;
   border: 2px solid rgba(229, 229, 229, 1);
   margin-right: 0;
+  background-color: transparent;
 }
 
 .num-onpage:hover {
@@ -1212,7 +1218,6 @@ body {
   background-position: center;
   margin-left: 8px;
   border-color: #E5E5E5;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .view-mode-slide:hover {
@@ -1287,7 +1292,7 @@ body {
   padding-top: 30px;
 }
 
-.pagelist li {
+.pagelist .pagelist-item {
   width: 60px;
   margin-right: 8px;
   border-radius: 4px;
@@ -1891,9 +1896,11 @@ body {
   opacity: 0.25;
   left: 612px;
   top: 180px;
+  border: none;
 }
 
 .calendar2 {
+  border: none;
   position: absolute;
   width: 16px;
   height: 15px;
@@ -1902,3 +1909,5 @@ body {
   left: 612px;
   top: 270px;
 }
+.calendar:hover {cursor: pointer;}
+.calendar2:hover {cursor: pointer;}
