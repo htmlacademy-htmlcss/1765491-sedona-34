@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>Гостиницы Седоны</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="./images/favicon.png"><!-- 32×32 -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -17,22 +18,22 @@
             alt="логотип-ссылка на главную."></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html" aria-label="главная"><span class="test">главная</span></a>
+            <a class="navigation-link" href="index.html" aria-label="главная."><span class="test">главная</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#" aria-label="о седоне"><span class="test">о седоне</span></a>
+            <a class="navigation-link" href="#" aria-label="о седоне."><span class="test">о седоне</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link current-link" href="catalog.html" aria-label="каталог"><span
+            <a class="navigation-link current-link" aria-label="каталог."><span
                 class="test">гостиницы</span></a>
           </li>
         </ul>
         <ul class="navigation-right">
           <li class="navigation-item-right">
-            <a class="navigation-link navigation-link-search" href="#" aria-label="поиск"></a>
+            <a class="navigation-link navigation-link-search" href="#" aria-label="поиск."></a>
           </li>
           <li class="navigation-item-right">
-            <a class="navigation-link navigation-link-like" href="#" aria-label="избранное"></a>
+            <a class="navigation-link navigation-link-like" href="#" aria-label="избранное."></a>
             <span class="liked-number">12</span>
           </li>
           <li class="navigation-item-big">
@@ -46,56 +47,93 @@
     <main class="catalog-main">
       <section class="filter">
         <div class="filter-wrapper">
-          <H1>гостиницы седоны</H1>
+          <h1>гостиницы седоны</h1>
           <ul class="filter-bread">
-            <li class="bread-item"><a aria-label="на главную страницу" class="bread-link" href="index.html"><svg class="breadsvg" width="13" height="12"
+            <li class="bread-item"><a aria-label="на главную страницу." class="bread-link" href="index.html"><svg class="breadsvg" width="13" height="12"
                   viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="m6.11 0-6 5.8V12h12V5.8l-6-5.8Zm5 11h-10V6.2l5-4.8 5 4.8V11Z" />
                   <path d="M4.11 10h1V7.5h2V10h1V6.5h-4V10Z" />
                 </svg></a></li>
-            <li class="bread-item"><a class="bread-link" href="catalog.html">Гостиницы</a></li>
+            <li class="bread-item"><a class="bread-link">Гостиницы</a></li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <div class="checkbox-wrapper">
-                <label class="checkbox-point" for="pool"><input class="infrastucture visually-hidden" type="checkbox" name="pool" id="pool" checked><span class="checkbox-field"></span>Бассейн</label>
+                <label class="checkbox-point" for="pool">
+                  <input class="infrastucture visually-hidden" type="checkbox" name="pool" id="pool" checked><span class="checkbox-field"></span>
+                  Бассейн
+                </label>
               </div>
               <div class="checkbox-wrapper">
-                <label class="checkbox-point" for="parking"><input class="infrastucture visually-hidden" type="checkbox" name="parking" id="parking" checked><span class="checkbox-field"></span>Парковка</label>
+                <label class="checkbox-point" for="parking">
+                  <input class="infrastucture visually-hidden" type="checkbox" name="parking" id="parking" checked>
+                  <span class="checkbox-field"></span>
+                  Парковка
+                </label>
               </div>
               <div class="checkbox-wrapper">
-                <label class="checkbox-point" for="wifi"><input class="infrastucture visually-hidden" type="checkbox" name="web" id="wifi"><span class="checkbox-field"></span>Wi-Fi</label>
+                <label class="checkbox-point" for="wifi">
+                  <input class="infrastucture visually-hidden" type="checkbox" name="web" id="wifi">
+                  <span class="checkbox-field"></span>
+                  Wi-Fi
+                </label>
               </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип Жилья:</legend>
+              <legend class="catalog-filter-title">
+                Тип Жилья:
+              </legend>
               <div class="radio-wrapper">
-                <label class="radio-point" for="hotel"><input class="visually-hidden type-radio" type="radio" name="housing" value="Гостиница" id="hotel" checked><span class="radio-field"></span>Гостиница</label>
+                <label class="radio-point" for="hotel">
+                  <input class="visually-hidden type-radio" type="radio" name="housing" value="Гостиница" id="hotel" checked>
+                  <span class="radio-field"></span>
+                  Гостиница
+                </label>
               </div>
               <div class="radio-wrapper">
-                <label class="radio-point" for="motel"><input class="visually-hidden type-radio" type="radio" name="housing" value="Мотель" id="motel"><span class="radio-field"></span>Мотель</label>
+                <label class="radio-point" for="motel">
+                  <input class="visually-hidden type-radio" type="radio" name="housing" value="Мотель" id="motel">
+                  <span class="radio-field"></span>
+                  Мотель
+                </label>
               </div>
               <div class="radio-wrapper">
-                <label class="radio-point" for="apartments"><input class="visually-hidden type-radio" type="radio" name="housing" value="Апартаменты" id="apartments"><span class="radio-field"></span>Апартаменты</label>
+                <label class="radio-point" for="apartments">
+                  <input class="visually-hidden type-radio" type="radio" name="housing" value="Апартаменты" id="apartments">
+                  <span class="radio-field"></span>
+                  Апартаменты
+                </label>
               </div>
             </fieldset>
             <div class="price-range">
               <p class="catalog-filter-title">Стоимость, ₽:</p>
               <div class="price-wrapper">
-              <input aria-label="Минимальная стоимость" class="minimal-price" type="number" value="0">
-              <input aria-label="Максимальная стоимость" class="maximum-price" type="number" value="9000">
+              <label class="visually-hidden" for="minprice">Минимальная стоимость</label>
+              <input class="minimal-price" aria-label="Минимальная стоимость." type="text" value="0" name="minprice" id="minprice">
+              <label class="visually-hidden" for="maxprice">Максимальная стоимость</label>
+              <input class="maximum-price" aria-label="Максимальная стоимость." type="text" value="9000" name="maxprice" id="maxprice">
               <span class="from-cost">от</span>
               <span class="to-cost">до</span>
               </div>
-              <div class="price-line"><div class="price-active-line" style="left:0px; right:51px">
-              <button type="button" class="change-min-price"><span class="visually-hidden">изменить минимальную цену.</span></button>
-              <button type="button" class="change-max-price"><span class="visually-hidden">изменить максимальную цену.</span></button>
-            </div></div>
+              <div class="price-line">
+                <div class="price-active-line" style="left:0px; right:51px">
+                <button type="button" class="change-min-price">
+                  <span class="visually-hidden">
+                    изменить минимальную цену.
+                  </span>
+                </button>
+                <button type="button" class="change-max-price">
+                  <span class="visually-hidden">
+                    изменить максимальную цену.
+                  </span>
+                </button>
+                </div>
+              </div>
             </div>
             <div class="catalog-button-wrapper">
-            <input class="apply-catalog" type="submit" name="apply" id="confirm" value="применить">
-            <input class="cancel-catalog" type="reset" name="cancel" id="clear" value="сбросить">
+            <input class="apply-catalog" type="submit" id="confirm" value="применить">
+            <input class="cancel-catalog" type="reset" id="clear" value="сбросить">
           </div>
           </form>
         </div>
@@ -104,20 +142,20 @@
         <h2 class="visually-hidden">Подходящие гостиницы</h2>
         <div class="result-header">
           <b>найдено гостиниц: 38</b>
-          <select aria-label="Сортировать" class="sort" name="sort">
+          <select class="sort" aria-label="Сортировать." name="sort">
             <option value="from_low">Сначала дешевые</option>
             <option value="from_hight">Сначала дорогие</option>
             <option value="from_rate">Сначала популярные</option>
           </select>
-          <a aria-label="показывать таблицей" class="view-mode view-mode-table" href="#"></a>
-          <a aria-label="показывать слайдами" class="view-mode view-mode-slide" href="#"></a>
-          <a aria-label="показывать списком" class="view-mode view-mode-list" href="#"></a>
+          <a class="view-mode view-mode-table" aria-label="показывать таблицей." href="#"></a>
+          <a class="view-mode view-mode-slide" aria-label="показывать слайдами." href="#"></a>
+          <a class="view-mode view-mode-list" aria-label="показывать списком." href="#"></a>
         </div>
         <div class="hotel-wrapper">
           <ul class="hotel-list">
             <li class="hotel-item">
-              <img src="images/hotel-1.jpg" width="300" height="211" alt="Гостиница Amara Resort & Spa.">
-              <h3>Amara Resort & Spa</h3>
+              <a class="grid-img"><img src="images/hotel-1.jpg" width="300" height="211" alt="Гостиница Amara Resort & Spa."></a>
+              <a class="grid-wrapper"><h3>Amara Resort & Spa</h3></a>
               <p>гостиница</p>
               <p>От 4000 ₽</p>
               <div class="moar"><a href="#">подробнее</a></div>
@@ -133,8 +171,8 @@
               </div>
             </li>
             <li class="hotel-item">
-              <img src="images/hotel-2.jpg" width="300" height="211" alt="Гостиница Villas at Poco Diablo.">
-              <h3>Villas at Poco Diablo</h3>
+              <a class="grid-img"><img src="images/hotel-2.jpg" width="300" height="211" alt="Гостиница Villas at Poco Diablo."></a>
+              <a class="grid-wrapper"><h3>Villas at Poco Diablo</h3></a>
               <p>гостиница</p>
               <p>От 5000 ₽</p>
               <div class="moar"><a href="#">подробнее</a></div>
@@ -150,8 +188,8 @@
               </div>
             </li>
             <li class="hotel-item">
-              <img src="images/hotel-3.jpg" width="300" height="211" alt="Гостиница Desert Quail Inn.">
-              <h3>Desert Quail Inn</h3>
+              <a class="grid-img"><img src="images/hotel-3.jpg" width="300" height="211" alt="Гостиница Desert Quail Inn."></a>
+              <a class="grid-wrapper"><h3>Desert Quail Inn</h3></a>
               <p>гостиница</p>
               <p>От 2500 ₽</p>
               <div class="moar"><a href="#">подробнее</a></div>
@@ -166,11 +204,11 @@
               </div>
             </li>
             <li class="hotel-item">
-              <img src="images/hotel-4.jpg" width="300" height="211" alt="Гостиница GreenTree Inn.">
-              <h3>GreenTree Inn</h3>
+              <a class="grid-img"><img src="images/hotel-4.jpg" width="300" height="211" alt="Гостиница GreenTree Inn."></a>
+              <a class="grid-wrapper"><h3>GreenTree Inn</h3></a>
               <p>гостиница</p>
               <p>От 1500 ₽</p>
-              <div class="moar"><a href="#">подробнее</a></div>
+              <div class="moar"><a href="#">подробне</a></div>
               <div class="addfavorite"><a href="#">в избранное</a></div>
               <ul class="rates-area">
                 <li class="rates-star"></li>
@@ -187,22 +225,22 @@
             <a>1</a>
           </li>
           <li class="pagelist-item">
-            <a href="#" aria-label="страница 2">2</a>
+            <a href="#" aria-label="страница 2.">2</a>
           </li>
           <li class="pagelist-item">
-            <a href="#" aria-label="страница 3">3</a>
+            <a href="#" aria-label="страница 3.">3</a>
           </li>
           <li class="pagelist-item">
-            <a href="#" aria-label="страница 4">4</a>
+            <a href="#" aria-label="страница 4.">4</a>
           </li>
           <li class="pagelist-item">
-            <a href="#" aria-label="список страниц">...</a>
+            <a href="#" aria-label="список страниц.">...</a>
           </li>
           <li class="pagelist-item">
-            <a href="#" aria-label="страница 10">10</a>
+            <a href="#" aria-label="страница 10.">10</a>
           </li>
           <li class="count">Гостиниц на странице:</li>
-          <li><select aria-label="количество гостиниц на одной странице" class="num-onpage" name="count">
+          <li><select aria-label="количество гостиниц на одной странице." class="num-onpage" name="count">
             <option value="from_low">4</option>
             <option value="from_hight">8</option>
             <option value="from_rate">16</option>
@@ -216,7 +254,8 @@
       <b>подпишитесь на рассылку</b>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
-        <input class="subscribe-email" type="email" value="Ваш e-mail" name="email">
+        <label class="visually-hidden" for="email">Ваш email</label>
+        <input class="subscribe-email" type="email" placeholder="Ваш e-mail" name="email">
         <input class="subscribe-submit" type="submit" value="подписаться">
       </form>
     </section>
