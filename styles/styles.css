@@ -1907,14 +1907,15 @@ body {
 .tooltip-text {
   background-color: #333333;
   width: 256px;
+  box-sizing: border-box;
   border-radius: 10px;
   position: absolute;
   color: white;
   font-size: 16px;
   font-weight: 400;
   padding: 15px 18px;
-  left: -155px;
-  top: 45px;
+  left: -115px;
+  top: 43px;
   display: none;
   text-transform: none;
 }
@@ -1927,7 +1928,7 @@ body {
   width: 19px;
   height: 9px;
   top: -9px;
-  left: 157px;
+  left: 118px;
   position: absolute;
   background-image: url(../images/modalup.svg);
   fill: black;
