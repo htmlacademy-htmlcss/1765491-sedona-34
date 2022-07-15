@@ -961,6 +961,19 @@ body {
   padding-left: 17px;
 }
 
+.minimal-price {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.minimal-price::placeholder {
+  color: white;
+}
+
+.minimal-price::-moz-placeholder {
+  color:white;
+}
+
 .minimal-price:hover {
   opacity: 0.6;
 }
@@ -995,10 +1008,21 @@ body {
   padding-left: 15px;
 }
 
+.maximum-price::placeholder {
+  color: white;
+}
+
+.maximum-price::-moz-placeholder {
+  color:white;
+}
+
 .maximum-price:hover {
   opacity: 0.6;
 }
-
+.maximum-price {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
 .maximum-price:focus-visible {
   outline: 3px solid #68A2CA;
 }
@@ -1756,9 +1780,18 @@ body {
 .old-number {
   margin-left: 64px;
 }
+.old-number {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
 
 .child-number {
   margin-left: 43px;
+}
+
+.child-number {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .tooltip-wrapper {
